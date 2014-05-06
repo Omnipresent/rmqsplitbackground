@@ -12,6 +12,9 @@ class MainController < UIViewController
 
     rmq(self).append(UIView, :top_style).back.append(UIView, :bottom_style)
 
+    rmq(:top_style).append(UILabel, :gray_label)
+    rmq(:bottom_style).append(UILabel, :blue_label)
+
     # Create your UIViews here
     # @hello_world_label = rmq.append(UILabel, :hello_world).get
   end

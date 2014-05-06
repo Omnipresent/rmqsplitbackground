@@ -28,4 +28,20 @@ class MainStylesheet < ApplicationStylesheet
     st.background_color = color.blue
   end
 
+  def gray_label(st)
+    st.frame = {t: 10, w: 100, h: 18}
+    st.centered = :horizontal
+    st.text_alignment = :center
+    st.text = 'Gray'
+    st.font = font.medium
+  end
+
+  def blue_label(st)
+    st.frame = {t: 250, w: 100, h: 18}
+    st.centered = :horizontal
+    st.text_alignment = :center
+    st.text = 'Blue'
+    st.font = font.medium
+  end
+
 end
